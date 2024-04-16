@@ -15,7 +15,7 @@ Below is the list of sections that we have coded on.
 3. nodding ans shaking detection
 4. integration of EAR, MAR, and head nodding
 5. model creation using Random Forest
-6. Testing random forest model
+6. testing random forest model
 7. neural network model creation and training
 8. testing of model using neural network
 9. testing of model based on neural network with nodding and shaking

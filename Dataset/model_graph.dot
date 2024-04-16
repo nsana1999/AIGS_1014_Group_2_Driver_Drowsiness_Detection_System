@@ -1,0 +1,21 @@
+digraph G {
+concentrate=True;
+dpi=96;
+rankdir=TB;
+node [shape=record];
+2627290450448 [label="{input_2|InputLayer}|{input:|output:}|{{[(None, 2)]}|{[(None, 2)]}}"];
+2627308266960 [label="{dense_4|Dense}|{input:|output:}|{{(None, 2)}|{(None, 128)}}"];
+2627359356368 [label="{dropout_2|Dropout}|{input:|output:}|{{(None, 128)}|{(None, 128)}}"];
+2627223176208 [label="{batch_normalization_1|BatchNormalization}|{input:|output:}|{{(None, 128)}|{(None, 128)}}"];
+2627358524496 [label="{dense_5|Dense}|{input:|output:}|{{(None, 128)}|{(None, 64)}}"];
+2627290619408 [label="{dropout_3|Dropout}|{input:|output:}|{{(None, 64)}|{(None, 64)}}"];
+2627290453264 [label="{dense_6|Dense}|{input:|output:}|{{(None, 64)}|{(None, 32)}}"];
+2627290256784 [label="{dense_7|Dense}|{input:|output:}|{{(None, 32)}|{(None, 1)}}"];
+2627290450448 -> 2627308266960;
+2627308266960 -> 2627359356368;
+2627359356368 -> 2627223176208;
+2627223176208 -> 2627358524496;
+2627358524496 -> 2627290619408;
+2627290619408 -> 2627290453264;
+2627290453264 -> 2627290256784;
+}
